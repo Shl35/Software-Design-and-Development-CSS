@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="product-grid">
-        <!-- สินค้าชิ้นที่ 1 -->
-        <div class="product-card">
-            <img src="image/product1.jpg" class="product-image">
-            <div class="product-details">
-                <h3 class="product-title">เสื้อยืด CELINE สีดำมินิมอล</h3>
-                <div class="product-price">฿1,999</div>
-                <div class="product-action">
-                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
-                </div>
+
+<div class="dashboard">
+
+    <header class="header">
+        <h1>แดชบอร์ด</h1>
+        <nav class="header-nav">
+            <button class="btn-outline">โปรไฟล์</button>
+            <button class="btn-danger">ออกจากระบบ</button>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <h2 class="logo">MyAdmin</h2>
+        <nav>
+            <ul>
+                <li class="active">หน้าแรก</li>
+                <li>รายงาน</li>
+                <li>การตั้งค่า</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>ยอดขายรวม</h3>
+                <p class="stat-number">฿500,000</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>จำนวนออเดอร์</h3>
+                <p class="stat-number">5,000</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>ลูกค้าใหม่</h3>
+                <p class="stat-number">158</p>
             </div>
         </div>
 
-        <!-- สินค้าชิ้นที่ 2 -->
-        <div class="product-card">
-            <img src="image/product2.jpg" class="product-image">
-            <div class="product-details">
-                <h3 class="product-title">เสื้อฟุตบอลสีแดง (Liverpool)</h3>
-                <div class="product-price">฿2,999</div>
-                <div class="product-action">
-                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
-                </div>
+        <div class="chart-container">
+            <div class="chart">
+                <h3>กราฟแสดงยอดขาย</h3>
+                <img src="image-5.png" class="chart-image">
+            </div>
+
+            <div class="chart">
+                <h3>สัดส่วนสินค้าขายดี</h3>
+                <img src="image-6.png" class="chart-image">
             </div>
         </div>
 
-        <!-- สินค้าชิ้นที่ 1 -->
-        <div class="product-card">
-            <img src="image/product3.jpg" class="product-image">
-            <div class="product-details">
-                <h3 class="product-title">รองเท้าผ้าใบ Adidas แถบแดง</h3>
-                <div class="product-price">฿11,999</div>
-                <div class="product-action">
-                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
-                </div>
-            </div>
-        </div>
+    </main>
 
-        <!-- สินค้าชิ้นที่ 2 -->
-        <div class="product-card">
-            <img src="image/product4.jpg" class="product-image">
-            <div class="product-details">
-                <h3 class="product-title">เสื้อฟุตบอลสีขาว (Liverpool)</h3>
-                <div class="product-price">฿6,000</div>
-                <div class="product-action">
-                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
-                </div>
-            </div>
-        </div>
+</div>
 
-       
-
-    </div>
 </body>
 </html>
+

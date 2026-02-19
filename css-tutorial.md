@@ -1344,9 +1344,146 @@ blockquote {
 ### ผลการทดลอง
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <header class="header">
+        <h1>แดชบอร์ด</h1>
+        <nav class="header-nav">
+            <button class="btn-outline">โปรไฟล์</button>
+            <button class="btn-danger">ออกจากระบบ</button>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <h2 class="logo">MyAdmin</h2>
+        <nav>
+            <ul>
+                <li class="active">หน้าแรก</li>
+                <li>รายงาน</li>
+                <li>การตั้งค่า</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>ยอดขายรวม</h3>
+                <p class="stat-number">฿500,000</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>จำนวนออเดอร์</h3>
+                <p class="stat-number">5,000</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>ลูกค้าใหม่</h3>
+                <p class="stat-number">158</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart">
+                <h3>กราฟแสดงยอดขาย</h3>
+                <img src="image-5.png" class="chart-image">
+            </div>
+
+            <div class="chart">
+                <h3>สัดส่วนสินค้าขายดี</h3>
+                <img src="image-6.png" class="chart-image">
+            </div>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+
+
 ```
 ```css
 [วางโค้ด CSS ที่นี่]
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-color: #f5f5f5;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .product-action {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .add-to-cart {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![alt text](image-7.png)
