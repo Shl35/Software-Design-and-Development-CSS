@@ -827,11 +827,97 @@ font-weight: bold;
 ### ผลการทดลอง
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">วิธีการเขียนบทความที่น่าสนใจ</h1>
+            <div class="post-meta">โพสต์เมื่อ 1 มกราคม 2025 | โดย ผู้เขียน</div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนื้อหาบทความที่ดีควรมีความน่าสนใจและเป็นประโยชน์ต่อผู้อ่าน การเขียนบทความให้น่าอ่านนั้นมีหลักการสำคัญหลายประการ</p>
+
+            <h2>1. การเลือกหัวข้อที่น่าสนใจ</h2>
+            <p>หัวข้อที่ดีควรตรงกับความสนใจของกลุ่มเป้าหมาย และมีประโยชน์ต่อผู้อ่าน</p>
+
+            <blockquote>
+                "การเขียนที่ดีไม่ได้เกิดจากพรสวรรค์เพียงอย่างเดียว แต่เกิดจากการฝึกฝนอย่างสม่ำเสมอ"
+            </blockquote>
+
+            <h2>2. การจัดโครงสร้างเนื้อหา</h2>
+            <p>เนื้อหาที่ดีควรมีการจัดลำดับที่เป็นระบบ เข้าใจง่าย และมีความต่อเนื่อง</p>
+        </div>
+    </article>
+</body>
+</html>
 ```
 ```css
 [วางโค้ด CSS ที่นี่]
+body {
+    font-family: Arial, sans-serif;  
+    background-color: #77bbff;
+    margin: 0;
+}
+
+
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+.post-header {
+    text-align: center;   
+    margin-bottom: 2rem;
+}
+
+.post-title {
+    font-size: 2.2rem;  
+    font-weight: bold;  
+    color: #626e5f;      
+    line-height: 1.3;    
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #c07373;
+    text-transform: uppercase;  
+}
+
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.6;   
+    color: #8a5e5e;
+}
+
+.post-content p {
+    margin-bottom: 1.2rem;
+}
+
+.post-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #34495e;
+    margin: 1.5rem 0 0.8rem;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #3498db;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: #555;
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-3.png)
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
