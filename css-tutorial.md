@@ -622,11 +622,98 @@ border: 1px solid black;
 ### ผลการทดลอง
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+     <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+
+    <section class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">5,555</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">10.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </section>
+
+</body>
+</html>
+
 ```
 ```css
 [วางโค้ด CSS ที่นี่]
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #493c3c;
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;   
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+.stat-box {
+    flex: 1;
+    margin: 0 10px;        
+    padding: 1.5rem;       
+    text-align: center;
+    background-color: #4d4848;
+    border-radius: 6px;   
+    border: 1px solid #ddd; 
+}
+
+
+.stat-number {
+    font-size: 2rem;       
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.4rem;
+}
+
+
+.stat-label {
+    font-size: 0.9rem;    
+    color: #d6d6d6;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .stat-box {
+        margin: 0.5rem 0;
+    }
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-2.png)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
