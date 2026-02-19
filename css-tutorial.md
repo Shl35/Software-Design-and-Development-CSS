@@ -395,8 +395,137 @@ background-size: cover;
 ### ผลการทดลอง
 ```html
 [วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="product-card">
+            <img src="image/product1.jpg" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">สินค้า A</h2>
+                <p class="product-price">฿1,999</p>
+                <p class="product-description">
+                    รายละเอียดสินค้า A คุณภาพดี ดีไซน์สวยงาม
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="image/product2.jpg" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">สินค้า B</h2>
+                <p class="product-price">฿2,999</p>
+                <p class="product-description">
+                    รายละเอียดสินค้า B รุ่นยอดนิยม
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="image/product3.jpg" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">สินค้า C</h2>
+                <p class="product-price">฿11,999</p>
+                <p class="product-description">
+                    รายละเอียดสินค้า C รุ่นพรีเมียม
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="image/product4.jpg" class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">สินค้า D</h2>
+                <p class="product-price">฿6,000</p>
+                <p class="product-description">
+                    รายละเอียดสินค้า D คุณภาพคุ้มราคา
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+```
+```css
+        .product-card {
+            width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-image: url('product.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-title {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .product-button {
+            display: block;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
+
+        .product-button:hover {
+            background: linear-gradient(to right, #0056b3, #003980);
+        }
+.container {
+    display: flex;
+    gap: 20px;         /* ระยะห่าง */
+    justify-content: center;
+}
+
+.product-card {
+    width: 250px;
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-1.png)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
